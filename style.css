@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding: 0;
+    background-color: rgb(244, 245, 226);
 } 
 
 .span-2-rows{
@@ -12,7 +13,15 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 1.5em;
 }
-
+.create-element::after{
+content: "ipsum consequat nisl";
+color: black;
+position: absolute;
+font-size: 100px;
+}
+.relative-container{
+    position: relative;
+}
 .border-control{
     border: 2px solid rgb(63, 63, 63);
     border-radius: 27px;
@@ -32,4 +41,10 @@ gap: 1.5em;
 
 .start-row-2{
     grid-row-start: 2;
+}
+.blend-image{
+    mix-blend-mode: darken;
+}
+.padding{
+    padding: 20px;
 }
