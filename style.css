@@ -2,49 +2,45 @@
     margin:0;
     padding: 0;
     background-color: rgb(244, 245, 226);
+    color: #404040;
 } 
 
-.span-2-rows{
-    grid-row: span 2;
-}
 
 .display-grid{
 display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 1.5em;
+grid-template-columns: repeat(2, 1fr);
+gap: 5.5rem;
 }
-.create-element::after{
-content: "ipsum consequat nisl";
-color: black;
-position: absolute;
-font-size: 100px;
+
+h1{
+    font-size: 66px;
 }
-.relative-container{
-    position: relative;
-}
-.border-control{
-    border: 2px solid rgb(63, 63, 63);
+.idea-image{
     border-radius: 27px;
+    margin-left: 10%;
+    margin-top: 3%;
+
+}
+.span-two{
+    grid-row:span 2;
 }
 
-.start-column-1{
-    grid-column-start: 1;
-}
 
-.start-column2{
-    grid-column-start: 2;
-}
-
-.start-row-1{
-    grid-row-start: 1;
-}
-
-.start-row-2{
-    grid-row-start: 2;
-}
 .blend-image{
-    mix-blend-mode: darken;
+mix-blend-mode: darken;
+margin-bottom: -30px;
 }
-.padding{
-    padding: 20px;
+
+.text-section{
+    border: 1px solid  black;
+    border-radius: 27px;
+    grid-row-start:2 ;
+    grid-column-start:2 ;
+    background-color: white;
+    align-self: center;
+}
+.text{
+    background-color: white;
+    padding: 30px;
+    margin: auto;
 }
